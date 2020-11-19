@@ -1,0 +1,514 @@
+/* ColmarAcademy - Project codeacademy */
+
+/* ----- Desktop Site Display -----*/
+
+/* Universal Selectors */
+* {
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  color: #333;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Helvetica, sans-serif;
+  background-color: #FCFCFD;
+}
+.container {
+  max-width: 960px/*80%*/;
+  margin: 0 auto;
+}
+
+/* HEADER - Cabeçalho - menu & FOOTE - rodapé - menu */
+.header {
+  background-image: url(/media/elisfreire1/elis-backup-500/My_Files-elisfreire1/My_Cursos/Curso_WebDevelopment-2020/WebDev-Projetos/Projetos-Codecademy-Finais-de-cursos/Project-final-ColmarAcademy_Curso-Build-a-Website/capstone_colmar3/resources/images/background-body-001.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  /*position: fixed;
+  width: 100%;
+  z-index: 10;*/ /*desativei porque está a sobrepor a banner e se corrigir banner com relative e top64px, este será sobreposto*/
+}
+header {
+    height: 64px;
+    position: relative;
+    /*background-color: #1444FA; /*Provisório: para orientação*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div {
+  display:flex;
+  align-items: center;
+}
+.logo {
+  float: left;
+  margin-left: 24px;
+  /*background-color: green; /*para orientação*/
+}
+.col-acad {
+    float: left;
+    text-transform: uppercase;
+    line-height: 1.8;
+    font-size: 1rem; /* ...px */
+    /*background-color: white; /*Provisório: para orientação*/
+}
+
+.nav-header {
+  margin-right: 24px;
+  /*background-color: burlywood; /*Provisório: para orientação*/
+}
+.nav-header ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+.nav-header ul li {
+  float: left;
+  padding-left: 16px;
+}
+.nav-header a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 22px 4px;
+}
+.nav-header a:hover{
+  color: white;
+  font-weight: 600;
+  background-color: #A3AABF; /*#C9E2F2 ou #BAC5D9*/
+  border-radius: 1px;
+}
+
+.mobile {
+  display: none;
+}
+
+footer {
+  background-color: #A3AABF; /*Provisório: para orientação*/
+  /*padding: 32px;*/
+  height: 72px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  color: white; /*Provisório: para orientação*/
+}
+
+.copyright {
+  padding-left: 24px;
+  /*padding-top: 16px;*/
+  margin-top: 0;
+}
+
+.nav-footer ul {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.nav-footer li{
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+}
+
+.nav-footer a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white; /*Provisório: para orientação*/
+}
+.nav-footer a:hover {
+  font-weight: 700;
+}
+
+/* End of HEADER & FOOTER*/
+
+
+/* Containers / Boxes: Banner, Practise and Thesis*/
+.banner,
+.practise,
+.thesis {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.banner {
+  background-color: #E0E5FA;
+  align-items: center;
+}
+.practise {
+    background-color: #F2F2F2;
+}
+.thesis {
+  background-color: #F2F2F2;
+  padding-bottom: 32px;
+}
+
+.banner1,
+.practise1,
+.thesis1 {
+    width: 60%;
+    height: auto;
+}
+.banner1,
+.practise1 {
+    padding: 32px 24px 32px 24px;
+}
+.thesis1 {
+    padding: 0 24px 32px 24px;
+}
+
+.banner2,
+.practise2,
+.thesis2 {
+  width: 40%;
+  height: auto;
+}
+.banner2 {
+  padding-right: 72px;
+}
+.practise2 {
+  margin-top: 32px; /*Nivela o container, mas desnivela as imagens. Com 16 faz o contrário.*/
+}
+
+.orientation, /* ATENÇÃO: mesmo que software, computer, design etc. */
+.campus,
+.lecture,
+.fisma,
+.now { /*container imgs practise2 e thesis2 -- cf img*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+.practise2 .description,
+.thesis2 .description { /*container dos textos*/
+  width: 65%;
+  height: auto;
+}
+
+/* Media's Banner, Practise & Thesis: images and videos */
+.banner1 img {
+  max-width: 100%;
+}
+.practise1 img {
+  padding-bottom: 32px;
+  max-width: 100%;
+}
+.thesis1 video {
+  width: 100%;
+  height: auto;
+  padding-bottom: 24px;
+}
+.practise2 img,
+.thesis2 img {
+  width: 35%;
+  height: auto;
+  padding: 16px 16px;
+  margin: 0;
+}
+
+
+/*Texts of Banner, Practise & Thesis*/
+
+.banner2 h1 {
+  font-size: 250%;
+}
+.banner2 h1 + p {
+  font-size: 20px;
+  line-height: 22px;
+  color: #444;
+}
+.shere { /* Banner: text Start Here (shere) */
+  background-color: #A3AABF;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  line-height: 22px;
+  border-radius: 2px;
+  margin: 0;
+}
+.banner2 a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 800;
+  display: block;
+}
+.shere:hover{
+  background-color: rgba(255, 255, 255, 0.65);
+}
+.banner2 a:hover {
+  color: #333;
+}
+
+
+.practise h1 {
+  padding-bottom: 24px;
+  margin: 0;
+}
+.practise2 a {
+  text-decoration: none;
+}
+
+.thesis h1 { /* h1 do Thesis é semelhante ao Learning */
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 32px 0 32px 0; /* diferença entre h1 thesis e learning */
+}
+
+.practise2 h2,
+.thesis h2 {
+  margin: 0;
+}
+
+.practise1 p,
+.thesis1 p {
+    /*background-color: aquamarine;*/
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+    color: #444;
+}
+p.citac { /* .practise1 autor */
+  padding-top: 32px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.practise2 p,
+.thesis2 p {
+    margin: 8px 0;
+    font-size: 14px; /*Provisório: *uniformizar e colocar em % ou em*/
+    line-height: 22px;
+}
+
+
+/* LEARNING: Start learning: courses */
+.learning {
+  background-color:#E0E5FA; /*Provisório: para orientação*/
+  display: block;
+}
+
+.list-courses { /* container geral do curso*/
+    padding: 0 66px 32px 66px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+}
+
+.course { /* Learning: container de cada curso: img e description */
+  position:relative;
+  vertical-align: top;
+  background-color: white;
+  width: 29%; /* Isto que me permite ajustar a div imagem a div pai*/
+  margin: 16px; /*cf. padding in .list-courses*/
+}
+
+.learning img { /*or .course-ilus /container img*/
+  Width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.list-courses .description { /* or .course .description /container*/
+  padding: 16px 0 24px 16px;
+  width: 100%;
+  height: auto;
+  font-size: 14px; /*Provisório: *uniformizar e colocar em % 87.5%; ou em*/
+  line-height: 22px;
+  color: #444;
+}
+
+.learning h1 { /* h1 do Thesis é semelhante ao Learning, unir para facilitar a manutenção do código */
+  text-align: center;
+  margin: 0;
+  padding: 32px 0 16px 0; /*cf. margim in .course*/
+}
+
+/* FOOTER -- ver em HEADER*/
+
+
+
+/* Mobile site display */
+/*HEADER*/
+
+@media only screen and (max-width:959px) {
+  /*para valores ou tamanhos de ecrãs menor que o tamanho do site desktop*/
+  .container {
+   width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+ /*Para tablets e ecrãs menores*/
+
+/* Containers / Boxes: Banner, Practise and Thesis*/
+
+.mobile {
+  display: inline-block;
+}
+
+.banner,
+.practise2,
+.thesis {
+  display: block;
+}
+/*.thesis {
+  padding-bottom: 0;
+}*/
+.banner1,
+.thesis1,
+.practise2 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+.practise1,
+.thesis1 .description,
+.thesis2,
+.desk {
+    display: none;
+}
+
+.banner2{
+  width: 100%;
+  padding: 32px 16px;
+  margin: 0;
+}
+.banner2 .lor{
+  padding-top: 32px;
+  padding-bottom: 24px;
+  margin:0;
+  font-size: 1.1rem;
+}
+.banner2 h1{
+  margin: 0;
+  font-size: 200%;
+}
+
+.banner1 img {
+  max-width: 100%;
+}
+
+.practise{
+  margin: 0;
+}
+.practise2{
+  padding: 16px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.orientation,
+.campus,
+.lecture { /*container imgs practise2 e -- cf img*/
+  display: block;
+}
+.practise2 img {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+}
+.practise2 .description{ /*container dos textos - verificar*/
+  width: 100%;
+  height: auto;
+}
+.orientation .description,
+.campus .description {
+  padding: 0 32px 48px 32px;
+}
+.lecture .description {
+  padding: 0 32px 32px 32px;
+}
+
+.practise .description h2{
+  font-size: 1.2rem;
+}
+.thesis {
+  padding-bottom: 24px;
+}
+.thesis h1 {
+  padding-bottom: 16px;
+}
+.thesis1 video {
+  width: 100%;
+  height: auto;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.learning h2{
+  padding: 16px 16px 24px 16px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+.list-courses{
+  display: block;
+  padding: 0 0 32px 0;
+  margin: 0 16px;
+
+}
+.course {
+  width: 100%;
+  margin: 0;
+}
+.course p{
+  display: none;
+}
+.list-courses .description {
+  padding: 0;
+  margin: 0;
+}
+.practise2 a {
+  font-size: 0.75rem;
+}
+
+.footer{
+  font-size: 0.7rem;
+}
+
+
+
+}
+
+@media only screen and (max-width: 720px) {
+  /*Para ipad*/
+  header p,
+ nav {
+   display: none;
+ }
+ header .mobile {
+   display: inline-block;
+ }
+
+ header{
+   justify-content: space-around;
+ }
+ .logo {
+   margin-left: 0;
+ }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /*Tablets e Ipad com landscape*/
+}
