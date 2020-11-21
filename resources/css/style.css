@@ -23,7 +23,7 @@ body {
 
 /* HEADER - Cabeçalho - menu & FOOTE - rodapé - menu */
 .header {
-  background-image: url(/media/elisfreire1/elis-backup-500/My_Files-elisfreire1/My_Cursos/Curso_WebDevelopment-2020/WebDev-Projetos/Projetos-Codecademy-Finais-de-cursos/Project-final-ColmarAcademy_Curso-Build-a-Website/capstone_colmar3/resources/images/background-body-001.jpg);
+  background-image: url(/resources/images/background-body-001.jpg);
   background-repeat: repeat;
   background-position: top center;
   background-size: cover;
