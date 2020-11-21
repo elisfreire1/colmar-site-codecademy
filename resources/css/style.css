@@ -23,7 +23,7 @@ body {
 
 /* HEADER - Cabeçalho - menu & FOOTE - rodapé - menu */
 .header {
-  background-image: url("/images/background-body-001.jpg");
+  background-image: url("./images/background-body-001.jpg");
   background-repeat: repeat;
   background-position: top center;
   background-size: cover;
